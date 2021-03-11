@@ -8,7 +8,7 @@ This research aims to model Cascadia Subduction Zone (CSZ) earthquakes (Mw 8.7 -
 
 ## **Features** ##
 #### (1) [Topography file (MHW datum, 1/3 arc-second resolution, NAVD '88 :globe_with_meridians:)](https://catalog.data.gov/dataset/strait-of-juan-de-fuca-1-3-arc-second-navd-88-coastal-digital-elevation-model) ####
-##### "To simulate flow over topography it is of course necessary to specify the topography. This is usually done by providing one or more files of surface elevation (relative to some reference, e.g. sea level) at a set of points on a rectangular grid (with x-y locations in Cartesian units or in latitude-longitude, depending on the application). Several file formats are recognized by GeoClaw. See Topography data for more information on how to specify topography and some on-line resources for obtaining topography" -Clawpack Creators. Our files are provided in ASCII format for ease of use. #####
+##### "To simulate flow over topography it is necessary to specify the topography. Our .topo files are provided in ASCII format for ease of use. #####
       
 #### (2a) [Makedata file (shows initial conditions and files being used in current runs)](https://www.clawpack.org/makefiles.html) ####
 #### (2b) maketopo file (The maketopo.py file is needed if you someone would like to remake the earthquakes. ) ####
@@ -19,7 +19,7 @@ This research aims to model Cascadia Subduction Zone (CSZ) earthquakes (Mw 8.7 -
        (3) Probabilistic Tsunami Hazard Assessment (PTHA) for Crescent City, CA. Final Report, by Frank I. Gonzalez, Randall J. LeVeque, Loyce M. Adams, Chris Goldfinger, George R. Priest, and Kelin Wang, 2014. ####
 
 #### (4) [Setrun.py](https://www.clawpack.org/setrun_geoclaw.html) ####
-##### The setrun file will have all the info about simulation length and timestep - a python script contains runtime parameters for given problem a GeoClaw simulation only requires modifying setrun.py (and providing bathymetry and fault source files) #####
+##### The setrun file will have all the info about simulation length :clock930: and timestep :clock930:- a python script contains runtime parameters for given problem a GeoClaw simulation only requires modifying setrun.py (and providing bathymetry and fault source files) #####
 #### (5) [Setplot.py](https://www.clawpack.org/setplot.html) ####
 #### (6) [Gauges and Stationary Gauge Plots :pushpin:](https://www.clawpack.org/gauges.html) ####
 #### (7) Folder containing the sea surface deformation images for reference ####
@@ -37,12 +37,6 @@ This research aims to model Cascadia Subduction Zone (CSZ) earthquakes (Mw 8.7 -
        (6) $ make plots (plots results in _plots/ folder)
        (7) $ make htmls (produces html verisons of files and README.txt)
        
-### Parameters: ###
-##### (i) :clock930: Simulation Run Time  = 48 hours = 172800 sec #####
-##### (ii) :clock930: Time Step = 0.5 sec #####
-
-
-## **Table of Tested Sources (rupture, length, width, fault drip, slip, etc.** ##
 ## **Contact** ##
 Hannah Spero
 Twitter - [@sperogeology](https://twitter.com/SperoGeology)
