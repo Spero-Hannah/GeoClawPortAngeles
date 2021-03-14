@@ -24,10 +24,13 @@ This research aims to model Cascadia Subduction Zone (CSZ) earthquakes (M<sub>w<
 *up-dip center point
 
 #### (3) [.dtopo plots for CSZ, LRF, and UPF deformation](https://www.clawpack.org/geoclaw/dtopotools_examples.html) ####
-##### Shows deformation produced on the sea floor for each of the modeled sources including the LRF and UPF sources. This repository has a folder containing the sea surface deformation images for reference. The Cascadia sources and plots of the sea surface deformation were provided by Dr. Randy LeVeque and are based on those used in: (links at bottom of README.md*)
-       (1) Simulated tsunami inundation for a range of Cascadia megathrust earthquake scenarios at Bandon, Oregon, USA, by R. C. Witter and Y. Zhang and K. Wang and G. R. Priest and C. Goldfinger and L. L. Stimely and J. T. English and P. A. Ferro, Geosphere (2013) pp. 1783-1803.
-       (2) Simulating tsunami inundation at Bandon, Coos County, Oregon, using hypothetical Cascadia and Alaska earthquake scenarios, by R. C. Witter and Y. Zhang and K. Wang and G. R. Priest and C. Goldfinger and L. L. Stimely and J. T. English and P. A. Ferro, Oregon Department of Geology and Mineral Industries Special Paper 43, 2011. ####
-       (3) Probabilistic Tsunami Hazard Assessment (PTHA) for Crescent City, CA. Final Report, by Frank I. Gonzalez, Randall J. LeVeque, Loyce M. Adams, Chris Goldfinger, George R. Priest, and Kelin Wang, 2014. ####
+##### Shows deformation produced on the sea floor for each of the modeled sources including the LRF and UPF sources. This repository has a folder containing the sea surface deformation images for reference. The Cascadia sources and plots of the sea surface deformation were provided by Dr. Randy LeVeque and are based on those used in: 
+
+<sub> [Simulated tsunami inundation for a range of Cascadia megathrust earthquake scenarios at Bandon, Oregon, USA, by R. C. Witter and Y. Zhang and K. Wang and G. R. Priest and C. Goldfinger and L. L. Stimely and J. T. English and P. A. Ferro, Geosphere (2013) pp. 1783-1803.](https://pubs.geoscienceworld.org/gsa/geosphere/article/9/6/1783/132896/Simulated-tsunami-inundation-for-a-range-of) </sub>
+
+<sub> [Simulating tsunami inundation at Bandon, Coos County, Oregon, using hypothetical Cascadia and Alaska earthquake scenarios, by R. C. Witter and Y. Zhang and K. Wang and G. R. Priest and C. Goldfinger and L. L. Stimely and J. T. English and P. A. Ferro, Oregon Department of Geology and Mineral Industries Special Paper 43, 2011.](https://www.oregongeology.org/tsuclearinghouse/resources/sp-43/SP-43_onscreen144dpi.pdf) </sub>
+
+<sub> [Probabilistic Tsunami Hazard Assessment (PTHA) for Crescent City, CA. Final Report, by Frank I. Gonzalez, Randall J. LeVeque, Loyce M. Adams, Chris Goldfinger, George R. Priest, and Kelin Wang, 2014.](http://hdl.handle.net/1773/25916)</sub>
 
 #### (4) [Setrun.py](https://www.clawpack.org/setrun_geoclaw.html) ####
 ##### The setrun file will have all the info about simulation length :clock930: and timestep :clock930:- a python script contains runtime parameters for given problem a GeoClaw simulation only requires modifying setrun.py (and providing bathymetry and fault source files) #####
@@ -55,9 +58,3 @@ Email :mailbox: - hannahspero11@gmail.com
 
 ## Contributors :ocean:
 GeoClaw parameters set by: Hannah Spero and Breanyn MacInnes. Also thanks to Bryce Coleman who designed the UPF scenarios and Trent Adams who designed the LRF scenarios, who were both CWU undergraduates. 
-## Provided links to earthquake scenario papers ##
-[Simulated tsunami inundation for a range of Cascadia megathrust earthquake scenarios at Bandon, Oregon, USA, by R. C. Witter and Y. Zhang and K. Wang and G. R. Priest and C. Goldfinger and L. L. Stimely and J. T. English and P. A. Ferro, Geosphere (2013) pp. 1783-1803.](https://pubs.geoscienceworld.org/gsa/geosphere/article/9/6/1783/132896/Simulated-tsunami-inundation-for-a-range-of) 
-
-[Simulating tsunami inundation at Bandon, Coos County, Oregon, using hypothetical Cascadia and Alaska earthquake scenarios, by R. C. Witter and Y. Zhang and K. Wang and G. R. Priest and C. Goldfinger and L. L. Stimely and J. T. English and P. A. Ferro, Oregon Department of Geology and Mineral Industries Special Paper 43, 2011.](https://www.oregongeology.org/tsuclearinghouse/resources/sp-43/SP-43_onscreen144dpi.pdf)
-
-[Probabilistic Tsunami Hazard Assessment (PTHA) for Crescent City, CA. Final Report, by Frank I. Gonzalez, Randall J. LeVeque, Loyce M. Adams, Chris Goldfinger, George R. Priest, and Kelin Wang, 2014.](http://hdl.handle.net/1773/25916)
