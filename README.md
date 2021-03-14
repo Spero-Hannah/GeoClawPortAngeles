@@ -10,7 +10,8 @@ This research aims to model Cascadia Subduction Zone (CSZ) earthquakes (M<sub>w<
 #### (1) [Topography file (MHW datum, 1/3 arc-second resolution, NAVD '88 :globe_with_meridians:)](https://catalog.data.gov/dataset/strait-of-juan-de-fuca-1-3-arc-second-navd-88-coastal-digital-elevation-model) ####
 ##### "To simulate flow over topography it is necessary to specify the topography. Our .topo files are provided in ASCII format for ease of use. #####
       
-#### (2) maketopo.py file (The maketopo.py file is needed to remake the earthquakes, earthquake variables based on table below (references in IJURCA). ####
+#### (2) maketopo.py file ####
+##### The maketopo.py file is needed to remake the earthquakes, earthquake variables based on table below (references in IJURCA). #####
 | FileName  | Location |M<sub>w</sub>| Longitude* | Latitude* | Strike | Length (km) | Width (km) | Depth (km) | Rake | Dip | Slip (m) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | UtsaladyMw70_90dip_4m | Utsalady  | 7.0 | -122.60000 | 48.30000 | 298 | 29 | 8 | 0 | 90 | 90 | 4 |
