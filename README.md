@@ -35,9 +35,11 @@ This research aims to model Cascadia Subduction Zone (CSZ) earthquakes (M<sub>w<
 #### (4) [Setrun.py](https://www.clawpack.org/setrun_geoclaw.html) ####
 ##### The setrun file will have all the info about simulation length :clock930: and timestep :clock930:- a python script contains runtime parameters for given problem a GeoClaw simulation only requires modifying setrun.py (and providing bathymetry and fault source files) #####
 #### (5) [Gauges and stationary gauge plots :pushpin:](https://www.clawpack.org/gauges.html) ####
+Information about gauges can be found in the zipped repository folder in the PDF labeled Table 4 and Table 5.
 #### (6) fgmax python file for creating the inundation plots ####
 
 ## **Running the project** ##
+#### Simulation Run Time = 3 hours ####
 #### Please reference Clawpack documentation for how to use the the GeoClaw Software to answer additional questions. We recommend you using the [GitHub repository link to the GeoClaw code files of version 5.4.1](https://github.com/clawpack/doc/blob/dev/doc/geoclaw.rst) and the [instructions for getting started in v.5.4.1](https://www.clawpack.org/v5.4.x/geoclaw.html)
 #### General commands to run from a terminal window in Python or a WSL command line: ####
        (1) cd to the right directory depending on your file hierarchy
