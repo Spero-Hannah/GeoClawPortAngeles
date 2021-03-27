@@ -29,7 +29,7 @@ def make_dtopo(makeplots=False):
     from clawpack.geoclaw import dtopotools
     import numpy
 
-    dtopo_fname = os.path.join("BRE_LR2_30km_5mEhalf.tt3")
+    dtopo_fname = os.path.join("LR1_5m.tt3")
 
     # Specify subfault parameters for this simple fault model consisting
     # of a single subfault:
@@ -42,8 +42,8 @@ def make_dtopo(makeplots=False):
     usgs_subfault.slip = 5
     usgs_subfault.rake = 90.
     usgs_subfault.dip = 60.
-    usgs_subfault.longitude = -122.86371
-    usgs_subfault.latitude = 48.340815
+    usgs_subfault.longitude = -123.27779
+    usgs_subfault.latitude = 48.359396
     usgs_subfault.coordinate_specification = "top center"
 
     fault = dtopotools.Fault()

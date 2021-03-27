@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document><name>InundationMap.kml</name>
+
+<Style id="Path">
+<LineStyle><color>FF8888FF</color><width>3</width></LineStyle>
+<PolyStyle><color>00000000</color></PolyStyle>
+</Style>
+<Placemark><name>InundationMap</name>
+<description>  x1 = -123.48, x2 = -123.34
+  y1 = 48.103, y2 = 48.1457</description>
+<styleUrl>#Path</styleUrl>
+<Polygon>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<outerBoundaryIs><LinearRing><coordinates>
+
+-123.4800,48.1030,0.0000
+-123.3400,48.1030,0.0000
+-123.3400,48.1457,0.0000
+-123.4800,48.1457,0.0000
+-123.4800,48.1030,0.0000
+
+</coordinates></LinearRing></outerBoundaryIs>
+</Polygon>
+</Placemark>
+
+</Document>
+</kml>
