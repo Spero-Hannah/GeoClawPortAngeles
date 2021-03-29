@@ -4,13 +4,18 @@
 ## **Overview:** ## 
 ReadMe file created by Hannah Spero to complement submission to IJURCA (International Journal of Undergraduate Research and Creative Activities). The IJURCA submission prepared by Spero, H.(1), Petersen, N. J.(2), and MacInnes, B.(3). (1) Boise State University Department of Geosciences, (2) Central Washington University, Accessibility Studies Program Coordinator, and (3) Central Washington University, Department of Geological Sciences. 
 
-This research aims to model Cascadia Subduction Zone (CSZ) earthquakes (M<sub>w</sub> 8.7 - 9.2), hypothetical Leech River Fault (LRF) earthquakes (M<sub>w</sub> 7.3 - 7.5), and one hypothetical Utsalady Point Fault (UPF) earthquakes(M<sub>w</sub> 7.0) and the resulting tsunamis. “From these earthquakes we used GeoClaw version 5.4.1 to calculate the resulting tsunamis at Port Angeles, Washington” Results were compared with the 2017 Port Angeles Hazards Map prepared by the WA-DNR and analyzed with universal design in mind for risk assessment.
+This research aims to model Cascadia Subduction Zone (CSZ) earthquakes (M<sub>w</sub> 8.7 - 9.2), hypothetical Leech River Fault (LRF) earthquakes (M<sub>w</sub> 7.3 - 7.5), and one hypothetical Utsalady Point Fault (UPF) earthquakes(M<sub>w</sub> 7.0) and the resulting tsunamis. “From these earthquakes we used GeoClaw version 5.4.1 to calculate the resulting tsunamis at Port Angeles, Washington” Results were compared with the 2017 Port Angeles Hazards Map prepared by the WA-DNR and analyzed with universal design in mind for risk assessment. Note: All references to the IJURCA manuscript repository figures and tables are located within the zipped IJURCA_REPOSITORY folder.
 
 ## **Features** ##
-#### (1) [Topography file (MHW datum, 1/3 arc-second resolution, NAVD '88 :globe_with_meridians:)](https://catalog.data.gov/dataset/strait-of-juan-de-fuca-1-3-arc-second-navd-88-coastal-digital-elevation-model) ####
+### Topography Files ###
+#### (1) [Topography file (MHW datum, Strait of Juan de Fuca 1/3 arc-second resolution Coastal Digital Elevation Model, NAVD '88 :globe_with_meridians:)](https://catalog.data.gov/dataset/strait-of-juan-de-fuca-1-3-arc-second-navd-88-coastal-digital-elevation-model) ####
+#### (2) [National Centers for Environmental Information, 2011, Port Townsend, Washington 1/3 Arc-second NAVD 88 Coastal Digital Elevation Model](catalog.data.gov/dataset/port-townsend-washington-coastal-digital-elevation-model)
+#### (3) [Amante, C., Eakins, B.W., 2009. ETOPO1 1 Arc-Minute Global Relief Model: Procedures, Data Sources and Analysis. National Oceanic and Atmospheric Administration (NOAA) Technical, NOAA, doi:10.7289/V5C8276M](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.dem:316)
 ##### "To simulate flow over topography it is necessary to specify the topography. Our .topo files are provided in ASCII format for ease of use. #####
-      
-#### (2) maketopo.py file ####
+
+### GeoClaw Files ###      
+#### (1) maketopo.py file ####
+       located in this general GitHub respository
 ##### The maketopo.py file is needed to remake the earthquakes, earthquake variables based on table below (references in IJURCA). #####
 | FileName  | Location |M<sub>w</sub>| Longitude* | Latitude* | Strike | Length (km) | Width (km) | Depth (km) | Rake | Dip | Slip (m) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -20,11 +25,11 @@ This research aims to model Cascadia Subduction Zone (CSZ) earthquakes (M<sub>w<
 | LR1Mw75_60km_60dip_5m  | LRF  | 7.5 | -123.094417 | 48.304968 | 294 | 60 | 15 | 0 | 90 | 60 | 5 |
 | LR1Mw73_W30km_60dip_5m  | LRF  | 7.3 | -123.27779 | 48.359396 | 294 | 30 | 15 | 0 | 90 | 60 | 5 |
 | LR1Mw73_E30km_60dip_5m  | LRF | 7.3 | -122.87462 | 48.304968 | 294 | 30 | 15 | 0 | 90 | 60 | 5 |
-
 *up-dip center point
 
-#### (3) [.dtopo plots for CSZ, LRF, and UPF deformation](https://www.clawpack.org/geoclaw/dtopotools_examples.html) ####
-##### Shows deformation produced on the sea floor for each of the modeled sources including the LRF and UPF sources. This repository has a folder containing the sea surface deformation images for reference. The Cascadia sources and plots of the sea surface deformation were provided by Dr. Randy LeVeque and are based on those used in: 
+#### (2) [.dtopo plots for CSZ, LRF, and UPF deformation](https://www.clawpack.org/geoclaw/dtopotools_examples.html) ####
+       located in the IJURCA_REPOSITORY folder, under .dtopo plots folder.
+##### Shows deformation produced on the sea floor for each of the modeled sources including the LRF and UPF sources. The Cascadia sources and plots of the sea surface deformation were provided by Dr. Randy LeVeque and are based on those used in: 
 
 <sub> [Simulated tsunami inundation for a range of Cascadia megathrust earthquake scenarios at Bandon, Oregon, USA, by R. C. Witter and Y. Zhang and K. Wang and G. R. Priest and C. Goldfinger and L. L. Stimely and J. T. English and P. A. Ferro, Geosphere (2013) pp. 1783-1803.](https://pubs.geoscienceworld.org/gsa/geosphere/article/9/6/1783/132896/Simulated-tsunami-inundation-for-a-range-of) </sub>
 
@@ -32,12 +37,24 @@ This research aims to model Cascadia Subduction Zone (CSZ) earthquakes (M<sub>w<
 
 <sub> [Probabilistic Tsunami Hazard Assessment (PTHA) for Crescent City, CA. Final Report, by Frank I. Gonzalez, Randall J. LeVeque, Loyce M. Adams, Chris Goldfinger, George R. Priest, and Kelin Wang, 2014.](http://hdl.handle.net/1773/25916)</sub>
 
-#### (4) [Setrun.py](https://www.clawpack.org/setrun_geoclaw.html) ####
+#### (3) [Setrun.py](https://www.clawpack.org/setrun_geoclaw.html) ####
+       located in the IJURCA_REPOSITORY folder, under .dtopo plots folder.
 ##### The setrun file will have all the info about simulation length :clock930: and timestep :clock930:- a python script contains runtime parameters for given problem a GeoClaw simulation only requires modifying setrun.py (and providing bathymetry and fault source files) #####
-#### (5) [Gauges and stationary gauge plots :pushpin:](https://www.clawpack.org/gauges.html) ####
-Information about gauges can be found in the zipped repository folder in the PDF labeled Table 4 and Table 5.
-#### (6) fgmax python file for creating the inundation plots ####
-
+#### (4) [Gauges and stationary gauge plots :pushpin:](https://www.clawpack.org/gauges.html) ####
+       located in the IJURCA_REPOSITORY folder, in the .PDF labeled Table 4 and Table 5.
+#### (5) make_fgmax.py python file for creating the inundation plots ####
+       located in this general GitHub respository
+#### (6) setplot.py ####
+       located in this general GitHub respository
+##### simulation time of models was 3 hours, line 123, but can be altered by users depending on their simulation time #####
+#### (7) InundationMap.kml file ####
+       located in this general GitHub respository
+#### (8) example maketopo.py ####
+       located in this general GitHub respository
+##### the example maketopo.py allows for an example into creating the .dtopo files #####
+#### (9) plot_fgmax.py ####
+       located in this general GitHub respository
+       
 ## **Running the project** ##
 #### Simulation Run Time = 3 hours ####
 #### Please reference Clawpack documentation for how to use the the GeoClaw Software to answer additional questions. We recommend you using the [GitHub repository link to the GeoClaw code files of version 5.4.1](https://github.com/clawpack/doc/blob/dev/doc/geoclaw.rst) and the [instructions for getting started in v.5.4.1](https://www.clawpack.org/v5.4.x/geoclaw.html)
