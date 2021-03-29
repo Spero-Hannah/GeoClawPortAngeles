@@ -11,7 +11,6 @@ This research aims to model Cascadia Subduction Zone (CSZ) earthquakes (M<sub>w<
 #### (1) [Topography file (MHW datum, Strait of Juan de Fuca 1/3 arc-second resolution Coastal Digital Elevation Model, NAVD '88 :globe_with_meridians:)](https://catalog.data.gov/dataset/strait-of-juan-de-fuca-1-3-arc-second-navd-88-coastal-digital-elevation-model) ####
 #### (2) [National Centers for Environmental Information, 2011, Port Townsend, Washington 1/3 Arc-second NAVD 88 Coastal Digital Elevation Model](catalog.data.gov/dataset/port-townsend-washington-coastal-digital-elevation-model)
 #### (3) [Amante, C., Eakins, B.W., 2009. ETOPO1 1 Arc-Minute Global Relief Model: Procedures, Data Sources and Analysis. National Oceanic and Atmospheric Administration (NOAA) Technical, NOAA, doi:10.7289/V5C8276M](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.dem:316)
-##### "To simulate flow over topography it is necessary to specify the topography. Our .topo files are provided in ASCII format for ease of use. #####
 
 ### GeoClaw Files ###      
 #### (1) maketopo.py file ####
