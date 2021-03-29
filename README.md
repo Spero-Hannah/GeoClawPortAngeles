@@ -1,3 +1,5 @@
+Cite at: [![DOI](https://zenodo.org/badge/343504521.svg)](https://zenodo.org/badge/latestdoi/343504521) 
+
 # Spero GeoClawPortAngeles #
 **Title: GeoClaw Code for Numerically Modeling Hypothetical Earthquake Ruptures in the Strait of Juan de Fuca.** 
 
